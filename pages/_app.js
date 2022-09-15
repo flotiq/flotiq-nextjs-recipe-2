@@ -1,5 +1,5 @@
-import '../styles/globals.css'
-import Head from 'next/head'
+import '../styles/globals.css';
+import Head from 'next/head';
 import { React, useEffect } from 'react';
 import Script from 'next/script';
 import { useRouter } from 'next/router';
@@ -44,6 +44,6 @@ const MyApp = ({ Component, pageProps }) => {
             <Component {...pageProps} />
         </div>
     );
-};
+}
 
-export default MyApp
+export default MyApp;
