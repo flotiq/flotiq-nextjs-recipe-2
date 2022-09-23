@@ -35,7 +35,6 @@ const RecipeTemplate = ({ post, pageContext }) => {
                         objectFit="cover"
                         opacity="1"
                         alt={recipe.name}
-                        additionalClasses={['w-full rounded-3xl']}
                     />
 
                 </div>
