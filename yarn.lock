@@ -1177,10 +1177,10 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@fontsource/poppins@^4.5.9":
-  version "4.5.9"
-  resolved "https://registry.npmjs.org/@fontsource/poppins/-/poppins-4.5.9.tgz"
-  integrity sha512-PMHOYeUpdmdN1xk13aGvhvZZrv9Zt3ubx2PmDvnROHgefm0ixpFd3ogAi0fY/aWtlkUdvgt0mSkGGbtt5i4MsQ==
+"@fontsource/poppins@^5.0.8":
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/@fontsource/poppins/-/poppins-5.0.8.tgz#a1c5540aedb3719a36eba5c7c5dfaa3aed3c9f80"
+  integrity sha512-P8owfYWluoUY5Nyzk4gT/L6LmLmseP6ezFWhj6VBUa5pRIdnCvNJpoQ6i/vhekjtJOfqX6nKlB+LCttoUl2GQQ==
 
 "@fontsource/sora@^4.5.10":
   version "4.5.10"
@@ -2498,7 +2498,7 @@ eslint-plugin-flowtype@^8.0.3:
     lodash "^4.17.21"
     string-natural-compare "^3.0.1"
 
-eslint-plugin-import@^2.25.2, eslint-plugin-import@^2.25.3, eslint-plugin-import@^2.26.0:
+eslint-plugin-import@^2.25.2, eslint-plugin-import@^2.25.3:
   version "2.26.0"
   resolved "https://registry.npmjs.org/eslint-plugin-import/-/eslint-plugin-import-2.26.0.tgz"
   integrity sha512-hYfi3FXaM8WPLf4S1cikh/r4IxnO6zrhZbEGz2b660EJRbuxgpDS5gkCuYgGWg2xxh2rBuIr4Pvhve/7c31koA==
@@ -2551,7 +2551,7 @@ eslint-plugin-jsx@^0.1.0:
     html-tags "1"
     svg-tags "1"
 
-eslint-plugin-react-hooks@^4.3.0, eslint-plugin-react-hooks@^4.6.0:
+eslint-plugin-react-hooks@^4.3.0:
   version "4.6.0"
   resolved "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.6.0.tgz"
   integrity sha512-oFc7Itz9Qxh2x4gNHStv3BqJq54ExXmfC+a1NjAta66IAN87Wu0R/QArgIS9qKzX3dXKPI9H5crl9QchNMY9+g==
