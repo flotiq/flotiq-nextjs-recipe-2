@@ -1,6 +1,10 @@
 {
   "name": "nextjs-starter-boilerplate",
   "private": true,
+  "description": "Flotiq NextJS recipe starter",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Flotiq team <helo@flotiq.com> (https://flotiq.com/)",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
