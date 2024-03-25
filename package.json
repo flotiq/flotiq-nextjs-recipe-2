@@ -18,7 +18,7 @@
     "config": "^3.3.8",
     "dotenv": "^16.0.0",
     "flotiq-components-react": "^1.0.0",
-    "highlight.js": "^11.4.0",
+    "highlight.js": "^11.9.0",
     "next": "12.1.0",
     "next-compose-plugins": "^2.2.1",
     "next-images": "^1.8.4",
