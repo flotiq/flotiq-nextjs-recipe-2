@@ -15,7 +15,7 @@
     "@heroicons/react": "^1.0.6",
     "@zeit/next-source-maps": "^0.0.3",
     "babel-plugin-inline-react-svg": "^2.0.1",
-    "config": "^3.3.8",
+    "config": "^3.3.11",
     "dotenv": "^16.0.0",
     "flotiq-components-react": "^1.0.0",
     "highlight.js": "^11.9.0",
