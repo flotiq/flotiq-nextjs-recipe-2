@@ -1274,10 +1274,10 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.57.0.tgz#a5417ae8427873f1dd08b70b3574b453e67b5f7f"
   integrity sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==
 
-"@fontsource/poppins@^5.0.12":
-  version "5.0.12"
-  resolved "https://registry.yarnpkg.com/@fontsource/poppins/-/poppins-5.0.12.tgz#f1e53d2a6b987cf7f186114f9711aba0c66d3848"
-  integrity sha512-0qzBxtIJLh82iMJ9pCXKYwGs1zyS+jyUmwVJ59+JdYnEaFVkDsxVOk9yDWfVOs14ALUneodU2m5YSGma6dCYCw==
+"@fontsource/poppins@^5.0.13":
+  version "5.0.13"
+  resolved "https://registry.yarnpkg.com/@fontsource/poppins/-/poppins-5.0.13.tgz#0522986a405ef45f0ec87f17b164790e450db6ab"
+  integrity sha512-8G9odFoxH43oZpvq43fpGucm8iHm6iatu0M1LIshb+tx3/y6YBXenVED7CI4resvPz6hyDu8a2vHSh9vrpe+wQ==
 
 "@fontsource/sora@^5.0.17":
   version "5.0.17"
@@ -4929,6 +4929,7 @@ string-natural-compare@^3.0.1:
   integrity sha512-n3sPwynL1nwKi3WJ6AIsClwBMa0zTi54fn2oLU6ndfTSIO05xaznjSf15PcBZU6FNWbmN5Q6cxT4V5hGvB4taw==
 
 "string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
+  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
