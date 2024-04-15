@@ -15,7 +15,7 @@
   "dependencies": {
     "@fontsource/poppins": "^5.0.13",
     "@fontsource/sora": "^5.0.17",
-    "@headlessui/react": "^1.7.18",
+    "@headlessui/react": "^1.7.19",
     "@heroicons/react": "1.0.6",
     "@zeit/next-source-maps": "^0.0.3",
     "babel-plugin-inline-react-svg": "^2.0.2",
