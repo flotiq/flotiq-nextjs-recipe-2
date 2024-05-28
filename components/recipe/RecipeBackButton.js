@@ -5,7 +5,7 @@ import { ArrowLeftIcon } from '@heroicons/react/solid';
 const RecipeBackButton = ({ additionalClass, backButtonText }) => (
     <Link href="/" passHref className={[...additionalClass].join(' ')}>
         <a
-            href="replace"
+            href="/#"
             className="border-transparent pt-12 pb-5 font-medium flex
             items-center font-sora font-semibold text-sm md:text-base uppercase"
         >

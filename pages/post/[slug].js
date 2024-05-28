@@ -1,6 +1,7 @@
 import React from 'react';
 import RecipeTemplate from '../../templates/RecipePost';
-import { getRecipeAll, getRecipeBySlug, getRecipePrevious, getRecipeNext } from '../../lib/recipe';
+import { getRecipe, getRecipeBySlug } from '../../lib/recipe';
+import replaceUndefinedWithNull from '../../lib/sanitize';
 
 const Home = ({ post, pageContext }) => (
     <RecipeTemplate
@@ -10,21 +11,14 @@ const Home = ({ post, pageContext }) => (
 )
 
 export async function getStaticProps({ params }) {
-    const postBySlug = await getRecipeBySlug(params.slug);
-    const createdAt = postBySlug?.data[0]?.internal.createdAt;
+    const postBySlug = replaceUndefinedWithNull(await getRecipeBySlug(params.slug));
     const filtersRecipes = `{"slug":{"type":"notContains","filter":"${params.slug}"}}`;
-    const previousPost = await getRecipePrevious(createdAt || null);
-    const previousPostSlug = (previousPost && previousPost.data && previousPost.data[0])
-        ? previousPost.data[0].slug : null;
-    const nextPost = await getRecipeNext(createdAt || null);
-    const nextPostSlug = (nextPost && nextPost.data && nextPost.data[0]) ? nextPost.data[0].slug : null;
-    const allPost = await getRecipeAll(1, 3, filtersRecipes);
+    const allPost = replaceUndefinedWithNull(await getRecipe(1, 3, filtersRecipes));
+ 
     return {
         props: {
-            post: postBySlug.data[0],
+            post: replaceUndefinedWithNull(postBySlug.data[0]),
             pageContext: {
-                previous: previousPostSlug,
-                next: nextPostSlug,
                 pageAll: allPost.data,
             },
         },
@@ -32,7 +26,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-    const posts = await getRecipeAll(1, 10000);
+    const posts =  replaceUndefinedWithNull(await getRecipe(1, 10000));
     const postData = posts.data;
 
     return {
@@ -44,4 +38,5 @@ export async function getStaticPaths() {
         fallback: false,
     };
 }
+
 export default Home;

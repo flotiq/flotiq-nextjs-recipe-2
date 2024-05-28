@@ -96,7 +96,7 @@ const Footer = () => (
                 flex flex-col items-center space-y-5 md:space-y-8"
         >
             <Link href="/" passHref>
-                <a href="replace">
+                <a href="/#">
                     <div className="block w-[82px] md:w-[103px] h-8 md:h-12 relative">
                         <Image
                             src="/assets/recipe-logo.svg"

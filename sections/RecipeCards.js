@@ -21,7 +21,6 @@ const RecipeCards = ({ recipes, headerText }) => (
                     tags={['#dinner', '#vegan', '#lunch', '#glutenfree']}
                 />
             ))}
-
         </div>
     </div>
 )

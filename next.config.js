@@ -1,16 +1,12 @@
 const withImages = require('next-images')
-const withPlugins = require('next-compose-plugins')
+const nextComposePlugins = require('next-compose-plugins');
+const { withPlugins } = nextComposePlugins.extend(() => ({}));
 const withTM = require('next-transpile-modules')(['flotiq-components-react'])
 
 module.exports = withPlugins(
     [
         withTM,
-        [
-            withImages,
-            {
-                exclude: /\.svg$/,
-            },
-        ],
+        withImages,
     ],
 
     {

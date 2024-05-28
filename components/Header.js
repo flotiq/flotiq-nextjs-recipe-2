@@ -16,7 +16,7 @@ const PageHeader = () => (
                         <div className="order-2 md:order-1 flex grow md:grow-0" style={{ minWidth: '100px' }}>
                             <div className="flex-shrink-0 flex grow md:grow-0 items-center justify-center">
                                 <Link href="/" passHref>
-                                    <a href="replace">
+                                    <a href="/#">
                                         <div className="block w-[83px] md:w-[124px] w-auto h-8 md:h-12 relative">
                                             <Image
                                                 src="/assets/recipe-logo.svg"
