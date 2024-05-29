@@ -14,7 +14,6 @@ export async function getStaticProps({ params }) {
     const postBySlug = replaceUndefinedWithNull(await getRecipeBySlug(params.slug));
     const filtersRecipes = `{"slug":{"type":"notContains","filter":"${params.slug}"}}`;
     const allPost = replaceUndefinedWithNull(await getRecipe(1, 3, filtersRecipes));
- 
     return {
         props: {
             post: replaceUndefinedWithNull(postBySlug.data[0]),
@@ -26,9 +25,8 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-    const posts =  replaceUndefinedWithNull(await getRecipe(1, 10000));
+    const posts = replaceUndefinedWithNull(await getRecipe(1, 10000));
     const postData = posts.data;
-
     return {
         paths: postData.map((post) => ({
             params: {
