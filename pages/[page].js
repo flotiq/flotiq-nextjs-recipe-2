@@ -2,11 +2,12 @@ import Pagination from 'flotiq-components-react/dist/components/Pagination/Pagin
 import React from 'react';
 import { Announcement } from 'flotiq-components-react';
 import Layout from '../layouts/layout';
-import { getRecipeAll } from '../lib/recipe';
 import RecipeCards from '../sections/RecipeCards';
 import config from '../lib/config';
 import RecipeFeaturedCard from '../components/RecipeFeaturedCard';
 // import CategoriesChoiceBar from '../components/CategoriesChoiceBar';
+import { getRecipe } from '../lib/recipe'
+import replaceUndefinedWithNull from '../lib/sanitize'
 
 const Home = ({ data, pageContext }) => {
     const recipes = data;
@@ -61,10 +62,11 @@ const Home = ({ data, pageContext }) => {
 }
 
 export async function getStaticProps({ params }) {
-    const fetchPost = await getRecipeAll(params.page, config.blog.postPerPage);
+    const fetchPost = replaceUndefinedWithNull(await getRecipe(params.page, config.blog.postPerPage));
+
     return {
         props: {
-            data: fetchPost.data,
+            data: replaceUndefinedWithNull(fetchPost.data),
             pageContext: {
                 currentPage: fetchPost.current_page,
                 numPages: fetchPost.total_pages,
@@ -74,7 +76,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-    const fetcher = await getRecipeAll(1, config.blog.postPerPage);
+    const fetcher = replaceUndefinedWithNull(await getRecipe(1, config.blog.postPerPage))
     const paths = [];
 
     for (let i = 0; i < fetcher.total_pages; i += 1) {

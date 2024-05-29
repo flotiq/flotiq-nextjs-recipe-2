@@ -39,7 +39,7 @@ const CustomRecipeFeaturedCard = ({
                 </p>
             </div>
             <Link href={`/post/${encodeURIComponent(slug)}`} passHref>
-                <a href="replace">
+                <a href="/#">
                     <div>
 
                         <Card.Title>
@@ -72,7 +72,7 @@ const CustomRecipeFeaturedCard = ({
             className="w-full lg:w-auto order-1 lg:order-2 lg:basis-3/5"
         >
             <Link href={`/post/${encodeURIComponent(slug)}`} passHref>
-                <a href="replace">
+                <a href="/#">
                     <Image
                         src={FlotiqImage.getSrc(image, 0, 0)}
                         width="1920"
