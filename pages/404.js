@@ -14,7 +14,7 @@ const NotFoundPage = () => {
                     Page not found, sorry
                 </Header>
                 <div className="text-center my-20 py-20">
-                    <Link href="/" passHref ref={ref}>
+                    <Link href="/" ref={ref}>
                         <Button ref={ref} variant="secondary" label="Go back to index" />
                     </Link>
                 </div>

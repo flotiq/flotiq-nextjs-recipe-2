@@ -95,17 +95,15 @@ const Footer = () => (
         <div className="md:w-auto px-5 md:px-0 mt-8
                 flex flex-col items-center space-y-5 md:space-y-8"
         >
-            <Link href="/" passHref>
-                <a href="/#">
-                    <div className="block w-[82px] md:w-[103px] h-8 md:h-12 relative">
-                        <Image
-                            src="/assets/recipe-logo.svg"
-                            alt="Logo"
-                            width="103"
-                            height="40"
-                        />
-                    </div>
-                </a>
+            <Link href="/">
+                <div className="block w-[82px] md:w-[103px] h-8 md:h-12 relative">
+                    <Image
+                        src="/assets/recipe-logo.svg"
+                        alt="Logo"
+                        width="103"
+                        height="40"
+                    />
+                </div>
             </Link>
             <div className="flex items-center justify-center space-x-4 md:space-x-3">
                 {navigation.social.map((item) => (

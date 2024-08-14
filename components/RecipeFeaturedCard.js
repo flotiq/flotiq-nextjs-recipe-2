@@ -38,19 +38,16 @@ const CustomRecipeFeaturedCard = ({
                     <span className="font-semibold">{portions}</span>
                 </p>
             </div>
-            <Link href={`/post/${encodeURIComponent(slug)}`} passHref>
-                <a href="/#">
-                    <div>
-
-                        <Card.Title>
-                            <span className="block text-3xl md:text-5xl mb-4 mx-1 font-normal">{title}</span>
-                        </Card.Title>
-                        <div
-                            className="text-base font-light my-4 line-clamp-5 lg:line-clamp-4 xl:line-clamp-5"
-                            dangerouslySetInnerHTML={{ __html: excerpt }}
-                        />
-                    </div>
-                </a>
+            <Link href={`/post/${encodeURIComponent(slug)}`}>
+                <div>
+                    <Card.Title>
+                        <span className="block text-3xl md:text-5xl mb-4 mx-1 font-normal">{title}</span>
+                    </Card.Title>
+                    <div
+                        className="text-base font-light my-4 line-clamp-5 lg:line-clamp-4 xl:line-clamp-5"
+                        dangerouslySetInnerHTML={{ __html: excerpt }}
+                    />
+                </div>
             </Link>
             {/* Uncomment this to add tags to your recipes */}
             {/* <div className="w-full"> */}
@@ -71,16 +68,14 @@ const CustomRecipeFeaturedCard = ({
         <div
             className="w-full lg:w-auto order-1 lg:order-2 lg:basis-3/5"
         >
-            <Link href={`/post/${encodeURIComponent(slug)}`} passHref>
-                <a href="/#">
-                    <Image
-                        src={FlotiqImage.getSrc(image, 0, 0)}
-                        width="1920"
-                        height="1280"
-                        layout="responsive"
-                        alt={imageAlt}
-                    />
-                </a>
+            <Link href={`/post/${encodeURIComponent(slug)}`}>
+                <Image
+                    src={FlotiqImage.getSrc(image, 0, 0)}
+                    width="1920"
+                    height="1280"
+                    layout="responsive"
+                    alt={imageAlt}
+                />
             </Link>
         </div>
 

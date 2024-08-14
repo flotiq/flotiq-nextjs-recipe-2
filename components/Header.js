@@ -15,17 +15,15 @@ const PageHeader = () => (
                     <div className="flex justify-between h-auto flex-wrap md:flex-nowrap">
                         <div className="order-2 md:order-1 flex grow md:grow-0" style={{ minWidth: '100px' }}>
                             <div className="flex-shrink-0 flex grow md:grow-0 items-center justify-center">
-                                <Link href="/" passHref>
-                                    <a href="/#">
-                                        <div className="block w-[83px] md:w-[124px] w-auto h-8 md:h-12 relative">
-                                            <Image
-                                                src="/assets/recipe-logo.svg"
-                                                alt="Logo"
-                                                width={124}
-                                                height={48}
-                                            />
-                                        </div>
-                                    </a>
+                                <Link href="/">
+                                    <div className="block w-[83px] md:w-[124px] w-auto h-8 md:h-12 relative">
+                                        <Image
+                                            src="/assets/recipe-logo.svg"
+                                            alt="Logo"
+                                            width={124}
+                                            height={48}
+                                        />
+                                    </div>
                                 </Link>
                             </div>
                             <div className="-ml-2 mr-2 flex items-center md:hidden">
