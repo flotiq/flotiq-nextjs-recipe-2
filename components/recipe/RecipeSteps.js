@@ -21,7 +21,7 @@ const RecipeSteps = ({ additionalClass, steps, headerText }) => (
                           src={FlotiqImage.getSrc(step.image?.[0], 0, 0)}
                           width={step.image[0].width}
                           height={step.image[0].height}
-                          objectFit="cover"
+                          style={{ objectFit: 'cover' }}
                           layout="responsive"
                           alt={step.step}
                           className="w-full pb-5 md:pb-10"

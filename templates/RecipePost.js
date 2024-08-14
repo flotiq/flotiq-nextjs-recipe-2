@@ -22,7 +22,7 @@ const RecipeTemplate = ({ post, pageContext }) => {
                 />
             </Head>
             <div className="flex flex-wrap max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-                <RecipeBackButton additionalClass={['mt-12 mb-5 uppercase']} backButtonText="Go back" />
+                <RecipeBackButton additionalClass={['uppercase']} backButtonText="Go back" />
             </div>
             <div className="flex flex-wrap max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
                 <div
@@ -32,7 +32,7 @@ const RecipeTemplate = ({ post, pageContext }) => {
                         src={FlotiqImage.getSrc(recipe.image?.[0], 0, 0)}
                         width="1920"
                         height="1287"
-                        objectFit="cover"
+                        style={{ objectFit: 'cover' }}
                         opacity="1"
                         alt={recipe.name}
                     />
