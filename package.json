@@ -16,7 +16,7 @@
     "@fontsource/poppins": "^5.0.14",
     "@fontsource/sora": "^5.0.18",
     "@headlessui/react": "^1.7.19",
-    "@heroicons/react": "1.0.6",
+    "@heroicons/react": "2.1.5",
     "@zeit/next-source-maps": "^0.0.3",
     "babel-plugin-inline-react-svg": "^2.0.2",
     "config": "^3.3.12",
