@@ -73,7 +73,7 @@ const CustomRecipeFeaturedCard = ({
                     src={FlotiqImage.getSrc(image, 0, 0)}
                     width="1920"
                     height="1280"
-                    layout="responsive"
+                    style={{ width: '100%', height: 'auto' }}
                     alt={imageAlt}
                 />
             </Link>

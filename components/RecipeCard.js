@@ -18,9 +18,8 @@ const CustomRecipeCard = ({
                 alt={name}
                 width="1920"
                 height="1280"
-                style={{ objectFit: 'cover' }}
+                style={{ objectFit: 'cover', width: '100%', height: 'auto' }}
                 className="w-full"
-                layout="responsive"
             />
         </Link>
         <Card.Body
