@@ -25,7 +25,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-    const posts = replaceUndefinedWithNull(await getRecipe(1, 10000));
+    const posts = replaceUndefinedWithNull(await getRecipe(1, 1000));
     const postData = posts.data;
     return {
         paths: postData.map((post) => ({
