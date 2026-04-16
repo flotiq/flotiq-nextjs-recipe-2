@@ -10,7 +10,6 @@ const RecipeCards = ({ recipes, headerText }) => (
         </Header>
         <div className="flex flex-wrap justify-start">
             {recipes.map((item) => (
-
                 <RecipeCard
                     cookingTime={item.cookingTime}
                     servings={item.servings}

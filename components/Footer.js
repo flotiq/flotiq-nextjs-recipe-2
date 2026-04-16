@@ -1,7 +1,9 @@
+'use client'
+
 import React from 'react';
 import Link from 'next/link';
-import { PoweredByFlotiq } from 'flotiq-components-react';
 import Image from 'next/image';
+import { PoweredByFlotiq } from 'flotiq-components-react';
 
 const instagramPath = 'M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772'
     + ' 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.0'

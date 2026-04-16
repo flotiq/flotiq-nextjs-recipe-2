@@ -38,7 +38,7 @@ const CustomRecipeFeaturedCard = ({
                     <span className="font-semibold">{portions}</span>
                 </p>
             </div>
-            <Link href={`/post/${encodeURIComponent(slug)}`}>
+            <Link href={`/recipe/${encodeURIComponent(slug)}`}>
                 <div>
                     <Card.Title>
                         <span className="block text-3xl md:text-5xl mb-4 mx-1 font-normal">{title}</span>
@@ -68,7 +68,7 @@ const CustomRecipeFeaturedCard = ({
         <div
             className="w-full lg:w-auto order-1 lg:order-2 lg:basis-3/5"
         >
-            <Link href={`/post/${encodeURIComponent(slug)}`}>
+            <Link href={`/recipe/${encodeURIComponent(slug)}`}>
                 <Image
                     src={FlotiqImage.getSrc(image, 0, 0)}
                     width="1920"

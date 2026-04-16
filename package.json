@@ -6,8 +6,8 @@
   "license": "MIT",
   "author": "Flotiq team <helo@flotiq.com> (https://flotiq.com/)",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "eslint --fix --ext .js,.jsx ."
@@ -23,7 +23,7 @@
     "dotenv": "^16.4.5",
     "flotiq-components-react": "^2.0.1",
     "highlight.js": "^11.10.0",
-    "next": "14.2.7",
+    "next": "16.2.4",
     "next-compose-plugins": "^2.2.1",
     "next-images": "^1.8.5",
     "next-runtime-dotenv": "^1.5.1",
@@ -32,7 +32,7 @@
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-helmet": "^6.1.0",
-    "webpack": "^5.94.0"
+    "react-helmet-async": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -45,7 +45,7 @@
     "autoprefixer": "^10.4.20",
     "babel-eslint": "^10.1.0",
     "cross-env": "^7.0.3",
-    "eslint": "^8.57.0",
+    "eslint": "9.26.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-next": "14.2.7",
     "eslint-config-react-app": "^7.0.1",
