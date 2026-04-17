@@ -4,7 +4,10 @@ import RecipeTemplate from '../../../templates/RecipePost'
 import replaceUndefinedWithNull from '../../../lib/sanitize'
 import { getRecipe, getRecipeBySlug } from '../../../lib/recipe'
 
-const getCachedRecipe = cache(async (slug) => getRecipeBySlug(slug))
+const getCachedRecipe = cache(
+    async (slug) =>
+        replaceUndefinedWithNull(await getRecipeBySlug(slug)).data[0]
+)
 
 export async function generateStaticParams() {
     const fetchAllRecipes = replaceUndefinedWithNull(await getRecipe(1, 1000))
@@ -17,11 +20,10 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
     const { slug } = await params
-    const recipeBySlug = await getCachedRecipe(slug)
-    const recipe = recipeBySlug.data[0]
+    const recipe = await getCachedRecipe(slug)
 
     if (!recipe) {
-        return { title: 'Recipe' }
+        return { title: 'Recipe not found' }
     }
 
     return {
@@ -32,16 +34,14 @@ export async function generateMetadata({ params }) {
 
 const Page = async ({ params }) => {
     const { slug } = await params
-
-    const recipeBySlug = await getCachedRecipe(slug)
-    const filtersRecipes = `{"slug":{"type":"notContains","filter":"${params.slug}"}}`
-    const allRecipes = await getRecipe(1, 3, filtersRecipes)
-
-    const recipeData = replaceUndefinedWithNull(recipeBySlug.data[0])
+    const recipeData = await getCachedRecipe(slug)
 
     if (!recipeData) {
         notFound()
     }
+
+    const filtersRecipes = `{"slug":{"type":"notContains","filter":"${slug}"}}`
+    const allRecipes = await getRecipe(1, 3, filtersRecipes)
 
     const allRecipesData = {
         pageAll: replaceUndefinedWithNull(allRecipes.data),

@@ -8,6 +8,7 @@ import RecipeCards from '../sections/RecipeCards'
 import Layout from '../layouts/layout'
 // import CategoriesChoiceBar from '../components/CategoriesChoiceBar';
 
+// Uncomment this to add categories to your recipes
 // const categoryTabs = [
 //     { name: 'Breakfast', href: '#', current: true },
 //     { name: 'Dinner', href: '#', current: false },

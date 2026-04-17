@@ -3,11 +3,6 @@ import { getRecipe } from '../lib/recipe'
 import config from '../lib/config'
 import PageContent from '../components/PageContent'
 
-export const metadata = {
-    title: config.siteMetadata.title,
-    description: config.siteMetadata.description,
-}
-
 const Page = async () => {
     const fetchRecipe = await getRecipe(1, config.recipe.recipesPerPage)
     const recipesData = replaceUndefinedWithNull(fetchRecipe.data)

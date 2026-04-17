@@ -1,8 +1,13 @@
 import GoogleAnalytics from '../components/GoogleAnalytics'
+import config from '../lib/config'
 import '../styles/globals.css'
 
 export const metadata = {
-    title: 'Next.js',
+    title: {
+        default: config.siteMetadata.title,
+        template: `%s | ${config.siteMetadata.title}`,
+    },
+    description: config.siteMetadata.description,
     icons: {
         icon: '/favicon.png',
     },
