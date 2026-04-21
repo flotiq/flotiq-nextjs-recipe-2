@@ -12,7 +12,7 @@ const CustomRecipeCard = ({
         bordered={false}
         additionalClasses={['mb-4 cursor-pointer basis-full md:basis-1/2 lg:basis-1/3 px-2 !bg-transparent']}
     >
-        <Link href={`/post/${encodeURIComponent(slug)}`}>
+        <Link href={`/recipe/${encodeURIComponent(slug)}`}>
             <Image
                 src={image}
                 alt={name}
@@ -27,7 +27,7 @@ const CustomRecipeCard = ({
                 'flex flex-col items-start justify-between order-2 lg:order-1 px-5 pt-10 pb-2 border-b-4 bg-white',
             ]}
         >
-            <Link href={`/post/${encodeURIComponent(slug)}`}>
+            <Link href={`/recipe/${encodeURIComponent(slug)}`}>
                 <div className="flex flex-wrap justify-start text-xs font-light space-x-5 pb-3">
                     <p className="px-4 py-2 bg-light-gray">
                         Time:

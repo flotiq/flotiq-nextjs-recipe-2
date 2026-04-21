@@ -1,9 +1,11 @@
+'use client'
+
 import React from 'react';
-import { Disclosure } from '@headlessui/react';
-import Link from 'next/link';
-import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import { Header } from 'flotiq-components-react';
 import Image from 'next/image';
+import Link from 'next/link';
+import { Header } from 'flotiq-components-react';
+import { Disclosure } from '@headlessui/react';
+import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
 const headerText = 'All you can eat';
 
