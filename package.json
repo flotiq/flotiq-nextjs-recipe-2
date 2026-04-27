@@ -22,7 +22,7 @@
     "config": "^3.3.12",
     "dotenv": "^16.4.5",
     "flotiq-components-react": "^2.0.1",
-    "highlight.js": "^11.10.0",
+    "highlight.js": "^11.11.1",
     "next": "16.2.4",
     "next-compose-plugins": "^2.2.1",
     "next-images": "^1.8.5",
