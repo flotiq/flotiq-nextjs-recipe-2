@@ -40,8 +40,12 @@ const Page = async ({ params }) => {
         notFound()
     }
 
-    const filtersRecipes = `{"slug":{"type":"notContains","filter":"${slug}"}}`
-    const allRecipes = await getRecipe(1, 3, filtersRecipes)
+    const allRecipes = await getRecipe(1, 3, {
+        slug: {
+            type: 'notContains',
+            filter: slug,
+        },
+    })
 
     const allRecipesData = {
         pageAll: replaceUndefinedWithNull(allRecipes.data),

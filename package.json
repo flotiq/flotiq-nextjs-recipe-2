@@ -13,6 +13,7 @@
     "lint:fix": "eslint --fix --ext .js,.jsx ."
   },
   "dependencies": {
+    "@flotiq/flotiq-api-sdk": "^1.1.1",
     "@fontsource/poppins": "^5.0.15",
     "@fontsource/sora": "^5.0.19",
     "@headlessui/react": "^2.1.3",
